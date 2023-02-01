@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Web Application Example</title>
+	<title>InfoSite ♥</title>
+	 <link rel="stylesheet"  href="disign.css">
+   <script src="js.js"></script>
+
 </head>
 <body>
-  <form id="form">
-    <input type="text" id="input-text">
-    <button type="submit" id="submit-button">Submit</button>
-  </form>
-  <div id="output"></div>
 
-  <script>
-    // Attach event listener to form submit
-    document.getElementById("form").addEventListener("submit", async (event) => {
-      event.preventDefault();
-      
-      // Get input value
-      const input = document.getElementById("input-text").value;
+<ul class="topnav">
+  <li><a class="active" href="#home">Տուն</a></li>
+  <li><a href="#Metax"; onclick="alerted()" ;>Մետաքս</a></li>
+  <li ><a href="#Mani"; onclick="alerted()" ;>Մանի</a></li>
+  <li class="right"><a href="#about";  onclick="alertedd()" ;>Մեր մասին</a></li>
+</ul>
 
-      // Make a POST request to the JavaScript backend
-      const response = await fetch("http://localhost:3000/submit", {
-        method: "POST",
-        body: JSON.stringify({ input }),
-      });
 
-      // Get the JSON response
-      const json = await response.json();
 
-      // Display the response in the output div
-      document.getElementById("output").innerHTML = json.output;
-    });
-  </script>
+</div>
 </body>
 </html>
